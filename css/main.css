@@ -1,12 +1,137 @@
+/* Setzt HTML und Body auf 100% Höhe */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Deaktiviert das Scrollen */
+}
+
+/* Wrapper bleibt weiterhin zentriert */
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0; /* Entfernt eventuell unerwünschte Ränder */
 }
+
 img {
     width: 100%;
     height: auto;
     max-width: 1003px;
     max-height: 590px;
+}
+
+/* Kalender-Icon oben rechts */
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.menu i {
+    font-size: 24px;
+    color: black;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+}
+
+/* Impressum Section Styles */
+.impressum-section {
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.impressum-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.impressum-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Impressum Bereich zentriert */
+.impressum-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Berechnet die Höhe, um die Menü-Bar oben zu berücksichtigen */
+    margin-top: 100px; /* Platz für die Menü-Bar */
+    text-align: center;
+}
+
+.impressum-section h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.impressum-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.impressum-section a {
+    color: #0073e6; /* Apple-typisches Blau für Links */
+    text-decoration: none;
+}
+
+.impressum-section a:hover {
+    text-decoration: underline;
+}
+
+/* Stile für die Menü-Bar oben */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-bar .home-button {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.menu-bar .home-button i {
+    margin-right: 8px;
 }
