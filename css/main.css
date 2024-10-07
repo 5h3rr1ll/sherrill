@@ -3,18 +3,20 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Deaktiviert das Scrollen */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Wrapper bleibt weiterhin zentriert */
+/* Zentrierter Wrapper für alle Seiten */
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0; /* Entfernt eventuell unerwünschte Ränder */
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
 }
 
+/* Logo-Bild */
 img {
     width: 100%;
     height: auto;
@@ -25,8 +27,8 @@ img {
 /* Kalender-Icon oben rechts */
 .menu {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    right: 30px;
 }
 
 .menu i {
@@ -39,81 +41,6 @@ img {
     color: inherit;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #f1f1f1;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.footer-content {
-    text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-    font-weight: normal;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-transform: lowercase;
-}
-
-/* Impressum Section Styles */
-.impressum-section {
-    padding: 40px;
-    margin: 50px auto;
-    max-width: 800px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.impressum-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.impressum-section p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Impressum Bereich zentriert */
-.impressum-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: calc(100vh - 100px); /* Berechnet die Höhe, um die Menü-Bar oben zu berücksichtigen */
-    margin-top: 100px; /* Platz für die Menü-Bar */
-    text-align: center;
-}
-
-.impressum-section h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-bottom: 20px;
-}
-
-.impressum-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.impressum-section a {
-    color: #0073e6; /* Apple-typisches Blau für Links */
-    text-decoration: none;
-}
-
-.impressum-section a:hover {
-    text-decoration: underline;
-}
-
 /* Stile für die Menü-Bar oben */
 .menu-bar {
     position: fixed;
@@ -121,17 +48,73 @@ footer a {
     width: 100%;
     background-color: #f1f1f1;
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu-bar .home-button {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .menu-bar .home-button i {
     margin-right: 8px;
+}
+
+/* Stile für Überschriften */
+h1, h2 {
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+/* Allgemeine Typografie */
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #4d4d4d;
+}
+
+/* Stile für Links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Impressum und Datenschutz Box */
+.section {
+    max-width: 800px;
+    padding: 40px;
+    margin: 50px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #868686;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+footer a:hover {
+    text-decoration: none
 }
